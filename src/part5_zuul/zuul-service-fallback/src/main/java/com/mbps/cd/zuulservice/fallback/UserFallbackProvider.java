@@ -29,6 +29,7 @@ public class UserFallbackProvider implements FallbackProvider {
     @Override
     public String getRoute() {
         // 表明是为哪个微服务提供回退
+        System.out.println("user-service");
         return "user-service";
     }
 

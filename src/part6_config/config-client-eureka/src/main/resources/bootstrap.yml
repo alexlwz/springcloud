@@ -4,7 +4,7 @@ spring:
   cloud:
     config:
       # config server的地址
-      uri: http://10.248.63.192:8080/
+      uri: http://127.0.0.1:8080/
       # config server的安全认证（下面演示的是是基于HTTP Basic的方式）
       #username: user
       #password: 5757124

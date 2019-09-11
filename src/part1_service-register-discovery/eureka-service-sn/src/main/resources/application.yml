@@ -1,6 +1,15 @@
 spring:
   application:
     name: eureka-server
+  devtools:
+   restart:
+     enabled: true
+     additional-paths: eureka-service-sn\src\main\java
+
+#  devtools:
+#    restart:
+#      enabled: true
+#      additional-paths: src/main/java
 
 server:
   port: 8761

@@ -1,10 +1,13 @@
 server:
   port: 8010
+management:
+  security:
+    enabled: false
 
 eureka:
   client:
     serviceUrl:
-      #defaultZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/
+#      defaultZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/
       defaultZone: http://localhost:8761/eureka/
   instance:
     prefer-ip-address: true # 优先注册IP地址而不是hostname
@@ -14,6 +17,10 @@ eureka:
 spring:
   application:
     name: movie-service
+  devtools:
+    restart:
+     enabled: true
+     additional-paths: movie-service\src\main\java
 
 userservice:
-  url: http://10.248.63.109:8000/
+  url: http://172.28.44.15:8000/

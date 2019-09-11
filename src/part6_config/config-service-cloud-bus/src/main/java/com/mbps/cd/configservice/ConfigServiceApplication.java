@@ -13,8 +13,8 @@ public class ConfigServiceApplication {
 
 	public static void main(String[] args) {
 		// 如果不需要设置代理，则注释掉以下两行代码
-		setHttpProxy();
-		setHttpsProxy();
+//		setHttpProxy();
+//		setHttpsProxy();
 
 		SpringApplication.run(ConfigServiceApplication.class, args);
 	}

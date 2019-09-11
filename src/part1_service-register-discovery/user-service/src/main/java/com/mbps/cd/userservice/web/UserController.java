@@ -19,6 +19,7 @@ public class UserController {
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public User findById(@PathVariable Long id){
         User result = userRepository.findOne(id);
+        result.setUsername("kqebl_lwz");
         return result;
     }
 }

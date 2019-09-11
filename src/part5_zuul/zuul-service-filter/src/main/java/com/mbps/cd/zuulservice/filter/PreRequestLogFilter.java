@@ -20,6 +20,7 @@ public class PreRequestLogFilter extends ZuulFilter {
     // 可选项：pre, route, post, error
     @Override
     public String filterType() {
+        PreRequestLogFilter.LOGGER.info("LOGGER  LWZ ");
         return "pre";
     }
 
